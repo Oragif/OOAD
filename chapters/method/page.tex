@@ -1,0 +1,41 @@
+\chapter{Method}
+\section*{Concepets}
+\begin{center}
+    \begin{tabular}{ l l }
+        \hline
+        Object & Entity with identity, state and behaviour\\\hline
+        Class  & Describes a collection of objects sharing structure, \\ & behavioural patterns and attributes\\\hline
+        Problem domain & Part that is administrated, monitored or controlled by a system\\\hline
+        Application domain & The organization that administrates the problem domain\\ \hline
+        System & A collection components that implements \\ &  modeling requirements, functions and interfaces \\\hline
+    \end{tabular}
+\end{center}
+
+\section{Objects and classes}
+\subsection*{Objects - \it{Entity with identity, state and behaviour}}
+Each object serves as a seperate function. The object could be a customer, where specific people are treated as customers. The object contains that specific customers identity, state and behaviour
+
+\subsection*{Class - \it{Describes a collection of objects sharing structure}}
+The class contains multiple objects, meaning a customer class will contain multiple data points. The class also contains multiple different customers and their data points.
+
+\subsection*{Analysis - outside the system}
+In analysis the object's behaviour is described by its events it performece and experiences that happens in definite points in time. Eg. customers ordering and shipping goods.\\
+
+\subsection*{Design - inside the system}
+In design the object's behaviour is described by the operations it can perform and make available to other objects in the system. Eg. add order etc. \\
+This allows the update of eg. the customers object state. The design object encapsulates the internal representation of the object state through its operations.\\
+
+\section{Principles}
+The 4 principles:
+\\\\
+\textit{Model the context} -
+Useful systems fit the context, so model both application and problem domain during analysis and design.
+\\\\
+\textit{Emphasize the architecture} -
+Understandable architecture makes collaboration between programmers and designers possible. Flexible architecture makes modifications and improvements affordable
+\\\\
+\textit{Reuse patterns} -
+Building on well-established ideas and pretested components
+\\\\
+\textit{Tailor the method to suit specific project} -
+Must be tailored to the specific needs of the analysis and design situation 
