@@ -5,18 +5,31 @@
         \hline
         Object & Entity with identity, state and behaviour\\\hline
         Class  & Describes a collection of objects sharing structure, \\ & behavioural patterns and attributes\\\hline
-        Problem domain & Part that is administrated, monitored or controlled by a system\\\hline
-        Application domain & The organization that administrates the problem domain\\ \hline
-        System & A collection components that implements \\ &  modeling requirements, functions and interfaces \\\hline
+        Problem domain & Part that is administrated, monitored or controlled by a system \\\hline
+        Application domain & The organization that administrates the problem domain\\ & Where the user is\\ \hline
+        System & A collection components that implements \\ &  modeling requirements, functions and interfaces \\\hline        
+        Context & Problem domain and application domain\\\hline
     \end{tabular}
 \end{center}
+\todo{Describe problem- and application domain better}
+\todo{Der er eksempler bag i bogen}
+
+\section*{Problem domain}
+Class structure and behaviour
+
+\section*{Application domain}
+Usage functions and interfaces
+
+\section*{Method}
+Purpose, concepts, principles and results.
 
 \section{Objects and classes}
 \subsection*{Objects - \it{Entity with identity, state and behaviour}}
 Each object serves as a seperate function. The object could be a customer, where specific people are treated as customers. The object contains that specific customers identity, state and behaviour
 
 \subsection*{Class - \it{Describes a collection of objects sharing structure}}
-The class contains multiple objects, meaning a customer class will contain multiple data points. The class also contains multiple different customers and their data points.
+The class contains multiple objects, meaning a customer class will contain multiple data points. The class also contains multiple different customers and their data points.\\
+When describing a class it's important to choose the right granularity. Gravel pit should not be described by the individual grains of sand, instead by the type, whereas a warehouse the individual packages should be described.\\
 
 \subsection*{Analysis - outside the system}
 In analysis the object's behaviour is described by its events it performece and experiences that happens in definite points in time. Eg. customers ordering and shipping goods.\\
@@ -39,3 +52,7 @@ Building on well-established ideas and pretested components
 \\\\
 \textit{Tailor the method to suit specific project} -
 Must be tailored to the specific needs of the analysis and design situation 
+
+\section*{Model}
+Model is a representation of the state in the problem domain. How often the model is updated is a design decision\\
+Problem domain -> model -> application domain.
