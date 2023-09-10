@@ -1,0 +1,100 @@
+\chapter{Classes \ooad[51]}
+To model the problem domain, starting with class activity.
+
+\section{Class Activity}
+Abstraction, classification and selection are the primary tasks in the class activity.
+
+\subsection*{Abstraction}
+Abstracting the problem domain phenomena by seeing them as objects and events.\\\\
+
+\subsection*{Classification}
+Then classifying the objects and events.
+\principle[Classify objects in the problem domain]
+
+\textbf{Step 1:} Abstraction and classification should lead to identifying all relevant objects, which should be develop a rich list of potentially relevant classes for the problem-domain model. In a parallel activity, identify and develop a similar list of events.
+
+\subsection*{Selection}
+Then selection which classes and events the system will maintain information on. Each class is characterized by a set of specific events.
+
+\textbf{Step 2:} Systematically evaluate the candidates and select relevant classes and events to be included in the problem-domain model. Finally relate events to classes. 
+
+\subsection*{Event table \ooad[52]}
+\begin{figure}[H]
+    \label{fig:event_table}
+    \begin{tabular}{ l | c c c c c }
+        \textbf{   Classes} & Customer   & Assistant  & Apprentice & Appointment & Plan      \\
+        \textbf{Events}     &            &            &            &             &           \\ \hline
+        Reserved            & \checkmark & \checkmark &            & \checkmark  & \checkmark\\
+        Cancelled           & \checkmark & \checkmark &            & \checkmark  &           \\
+        Treated             & \checkmark &            &            & \checkmark  &           \\
+        Employed            &            & \checkmark & \checkmark &             &           \\
+        Graduated           &            &            & \checkmark &             &           \\
+        Agreed              &            & \checkmark & \checkmark &             & \checkmark\\ \hline
+    \end{tabular}
+    \caption{Event table for Hair Salon System (P. 52)}
+\end{figure}
+
+\section{Classification of Objects and Events \ooad[52]}
+\subsection*{Object}
+During the problem analysis an object is an abstraction of a phenomena in that problem domain. An object should be indetifiable be an independent entity, which is delimited.
+\\
+Using events is emphasized by:\\
+\principle[Characterize objects through their events]
+
+\subsection*{Event}
+Events specify the qualities of problem-domain objects. An event is defined as:\\
+\event[An instantaneous incident involving one or more objects]
+An event is an abstraction of a problem-domain activity or process that is perfomed or experienced by one or more objects.
+
+\subsection*{Class}
+Classes contain objects and event. These are identify all the objects and events to be included in a relevant problem-domain model.
+The class concept refers and describse all the objects in a specific class:
+\class[A secription of a collection of objects sharing structure, behavioral pattern, and attributes]
+
+Object's structure, behavioral pattern, and attributes are described in general terms by the appopriate class deiniftion. Where all classes are different.
+
+\subsubsection*{Find Classes \ooad[57]}\label{sec:find_classes}
+Class selection is the first and most basic for building problem-domain model. It's important to write down all potentially relevant classes, without evaluating them in detail. Do this using own perception, pre-existing decriptions and definitions, including prospective users by interviewing and observing them work. This can be further expanded by using pre-existing system, and using the experience as an advantage. This also include regulations in the are of the operation of the system. This should in a list of class candidates, with easy to understand name, that references in the problem domain.
+
+\subsection*{Event}
+\subsubsection*{Find Events \ooad[59]}
+Using the same fundamental principle as the \textbf{\hyperref[sec:find_classes]{find classes section}}. 
+
+\subsection*{Evalute Systematically \ooad[62]}
+Fundamental evaluation rule: a class or event should be included in the problem-domain model \textit{iff} system functions use information about it. Basic criteria rules:
+\begin{itemize}
+    \item Is the class or event within the system definition?
+    \item Is the class or event relevant for the problem-domain model?
+\end{itemize}
+Only classes and events within the problem-domain should be selected. These classes and events should refer to phenomena that will be administrated, monitored and controlled by future users in their work. \\\\
+Users are usually not part of the problem domain, unless the users are being registered within the system, in eg. the case of restricted access.
+
+\subsubsection*{Evaluation Criteria for Classes \ooad[63]}
+As a rule, these questions should be answered when evaluating classes:
+\begin{itemize}
+    \item Can you identify objects from the classes?
+    \item Does the class contain unique information?
+    \item Does the class encompass multiple objects?
+    \item Does the class have a suitable and manageable number of events?
+\end{itemize}
+An object should be unambiguously be indetifyalbe from a class. Typically a class will contain multiple objects and should contain an appropriate amount of unique information. Events are realated to classes in order to characterize them. This is expressed through an  \hyperref[fig:event_table]{event table}. Classes can be further specified than their name by descriping their responsibilities, this limits confusion when the system is developed. This is done through plain text and can specify why it differs from other classes.
+
+\subsubsection*{Evaluation Criteria for Events \ooad[65]}
+As a rule, these questions should be answered when evaluating events:
+\begin{itemize}
+    \item Is the event instantaneuou?
+    \item Is the event atomic?
+    \item Can the event be identified when it happens?
+\end{itemize}
+It should be defined as instantaneous to make it clear when it happens. If the incident happens over a period a stop and start event can be used. Defining and naming an event determines the granularity of the time model. Each event should be identifiable when it happens.
+
+\subsubsection*{Relating Classes and Event \ooad[66]}
+When selecting a class, one also has to define the events that the class objects are involved in. From event to objects should also be defined.
+As a rule, these questions should be answered when relating:
+\begin{itemize}
+    \item Which events is this class involved in?
+    \item Which classes are involved in this event?
+\end{itemize}
+These should be summarized in an \hyperref[fig:event_table]{event table}. Which can also be used to evluate the quality of class and event candidates.
+\\\\
+{\Large \textbf{Summarized principles can be seen on OOAD P. 66}}

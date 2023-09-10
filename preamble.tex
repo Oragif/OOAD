@@ -1,3 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%
+%   Package setup
+%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{array}
 \usepackage{tabularx}
+\setlength {\marginparwidth }{2cm}
 \usepackage{todonotes}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%
+%  Document setup
+%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[includehead]{geometry}
+\usepackage{fancyhdr}
+
+%%%%%%%%%%%%%%%%%%%%
+% Custom stuff below
+%%%%%%%%%%%%%%%%%%%%
+
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+\def \principle[#1]{
+    \begin{figure}[H]
+        \textit{\textbf{Principle -} #1}
+    \end{figure}
+}
+\def \event[#1]{
+    \begin{figure}[H]
+        \textit{\textbf{Event -} #1}        
+    \end{figure}
+}
+\def \class[#1]{
+    \begin{figure}[H]
+        \textit{\textbf{Class -} #1}
+    \end{figure}
+}
+\def \ooad[#1]{
+    {\tiny \textbf{(OOAD P. #1)}}
+}
