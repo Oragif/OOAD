@@ -15,7 +15,7 @@
             \item Assess social changes in the application domain.
         \end{itemize} \\\hline
         \textbf{Result} & \begin{itemize}
-            \item Descriptions of all use cases and actors.
+            \item Descriptions of all use cases and actors, also known as actor tables.
         \end{itemize} \\\hline
     \end{tabular}
 \end{figure}
@@ -46,7 +46,7 @@ The complete set of use cases determines all uses of the target system within th
 \section{Find Actors and Use Cases}
 Criterion for determening different actors is a dissimilarity of roles. If multiple roles appear the same to the system, they should be consolidated.
 \subsection*{Describe actors}
-\begin{figure}
+\begin{figure}[H]
     \begin{tabular}{p{\textwidth }}
         \\\hline
         \begin{center}
@@ -64,3 +64,20 @@ Criterion for determening different actors is a dissimilarity of roles. If multi
 \end{figure}
 \subsection*{Describe Use Cases}
 Can be described with statechart diagram for a good overview or a use-case specification for more details. It should make use of abstraction, the goal is to collect many possible ways of using the traget system in a few well-chosen use cases.
+
+\subsection*{How to Select Work Tasks}
+A work task uses a use a case, and in turn is used by the actor.\\
+\\
+\textbf{Help to select}\\
+What tasks exist in the application domain?\\
+What is the division of labor?\\
+How are the different tasks delimited?\\
+Describe the work tasks:
+\begin{itemize}
+    \item Name and content
+    \item Purpose
+    \item How is it assigned?
+    \item Who perfomed it?
+    \item Relationship and other tasks
+    \item Result
+\end{itemize}
