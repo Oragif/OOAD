@@ -1,0 +1,66 @@
+\chapter{Functions \ooad[139]}
+\begin{figure}[H]
+    \begin{tabular}{|l|p{12cm}|}
+        \hline
+        \textbf{Purpose} & \begin{itemize}
+            \item To determine the system's information processing capabilitites.
+        \end{itemize} \\\hline
+        \textbf{Concepts} & \begin{itemize}
+            \item Function: A facility for making a model useful for actors.
+        \end{itemize} \\\hline
+        \textbf{Principles} & \begin{itemize}
+            \item Udentify all functions.
+            \item Specify only complex funtions.
+            \item Check consistency with use cases and the model.
+        \end{itemize} \\\hline
+        \textbf{Result} & \begin{itemize}
+            \item A complete list of functions with specification of complex functions.
+        \end{itemize} \\\hline
+    \end{tabular}
+\end{figure}
+Functions focus on what the system can do to assist actors in their work.
+When determining requirement for functions:
+\begin{itemize}
+    \item What is the system going to do?
+\end{itemize}
+\section{System Functions\ooad[139]}
+\begin{figure}[H]
+    \textit{\textbf{Function -} A facility for making a model useful for actors.}
+\end{figure}
+From an analytical perspective a function represents the intent of a system. A function is activated, executed and provides a result. The execution can change the state of a model's components or create a reaction in application or problem domain.
+\subsection*{Function Types\ooad[140]}
+\begin{description}
+    \item[Update] functions are activated by a problem-domain event and result in a change in the model’s state.
+    \item[Signal] functions are activated by a change in the m odel’s state and result in a reaction in the context; this reaction might be a display to the actors in the application domain, or a direct intervention in the problem domain.
+    \item[Read] functions are activated by a need for information in an actor’s work task and result in the system displaying relevant parts of the model.
+    \item[Compute] functions are activated by a need for information in an actor’s work task and consist o f a computation involving information provided by the actor or the model; the result is a display of the computation’s result.     
+\end{description}
+Functions are not always pure and can be mixture of the above.
+
+\subsection*{Analysing Functions\ooad[143]}
+\principle[Identify all functions.]
+\principle[Specify only complex functions.]
+\principle[Check consistency with use cases and the model.]
+
+\section{Find Functions}
+There are two essential aspects when finding functions:
+\begin{itemize}
+    \item Consider the sources for identifying functions. Where do the systems' function requirements come from.
+    \item Consider the level of detail. How detailed should the description of a function be. How specific or general should defining individual functions be?
+\end{itemize}
+The sources are problem-domain description expressed by it's classes and events. Also the application domain expressed by its use cases.
+
+\begin{itemize}
+    \item Classes typically gives read and update functions.
+    \item Events typically gives update functions.
+    \item Use cases gives all functions.
+\end{itemize}
+Functions must be described enough for both and overview of total functionality, but also a basis for an agreement between developer and users.\\\\
+The result should be a list functional requirements for the system.
+
+\section{Principles}
+\begin{description}
+    \item[\textit{Identify all functions.}] One of the main purposes of the analysis is to determine the level of ambition for the target system. The complete list of functions is an important element in achieving this.
+    \item[\textit{Specify only complex functions.}] We recommend that you describe the functions briefly and informally in a list. However, it may sometimes be necessary to specify certain functions in detail in order to understand them and assess their complexity.
+    \item[\textit{Check consistency with use cases and the model.}] The list of functions must be consistent with the list of use cases and the m odel’s classes and events. Checking this can reveal insufficient analysis.
+\end{description}
